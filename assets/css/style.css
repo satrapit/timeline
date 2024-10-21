@@ -647,6 +647,10 @@ video {
   margin-top: 0.125rem;
 }
 
+.ml-\[1px\] {
+  margin-left: 1px;
+}
+
 .flex {
   display: flex;
 }
@@ -657,6 +661,14 @@ video {
 
 .h-2 {
   height: 0.5rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-11 {
+  height: 2.75rem;
 }
 
 .w-4 {
@@ -752,6 +764,10 @@ video {
   border-top-width: 2px;
 }
 
+.border-dashed {
+  border-style: dashed;
+}
+
 .border-amber-500 {
   --tw-border-opacity: 1;
   border-color: rgb(245 158 11 / var(--tw-border-opacity));
@@ -774,6 +790,11 @@ video {
 .py-0\.5 {
   padding-top: 0.125rem;
   padding-bottom: 0.125rem;
+}
+
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .pl-8 {
