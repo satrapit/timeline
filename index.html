@@ -8,8 +8,245 @@
     <title>Fiboard</title>
 </head>
 
-<body class="">
-    <div class="container mx-auto p-8 max-w-[640px]">
+<body>
+    <!-- Less than 768px -->
+    <div class="container mx-auto p-4 max-w-[640px] md:hidden">
+        <div class="flex flex-col">
+            <!-- Row 1 -->
+            <div class="flex justify-between items-center pl-8">
+                <div class="border-2 bg-amber-100 border-amber-500 rounded-full px-5 py-0 h-11">
+                    <p class="text-sm">Week1</p>
+                    <hr class="border-t-2 border-amber-500">
+                    <p class="text-xs">0.0001$</p>
+                </div>
+                <div class="flex-grow border-t-2 border-amber-500 relative mx-[-1px]">
+                    <span
+                        class="absolute text-base top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-amber-500">▶</span>
+                </div>
+                <div class="border-2 bg-amber-100 border-amber-500 rounded-full px-5 py-0 h-11">
+                    <p class="text-sm">Week2</p>
+                    <hr class="border-t-2 border-amber-500">
+                    <p class="text-xs">0.0002$</p>
+                </div>
+                <div class="flex-grow border-t-2 border-amber-500 relative mx-[-1px]">
+                    <span
+                        class="absolute text-base top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-amber-500">▶</span>
+                </div>
+                <div class="relative w-6 h-12 mr-2 flex items-end">
+                    <div class="absolute bottom-[1px]"
+                        style="width: 24px; height: 24px; border-top-right-radius: 24px; border: 2px solid #f59e0b; border-bottom: 0; border-left: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Separator 1 -->
+            <div class="h-2 flex items-center justify-end">
+                <span class="w-4 mt-0.5 mr-[1px] bottom-0 text-amber-500 text-base transform rotate-90">▶</span>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="flex justify-between items-center">
+                <div class="relative w-6 h-12 ml-2 flex items-end">
+                    <div class="absolute bottom-[1px]"
+                        style="width: 24px; height: 24px; border-top-left-radius: 24px; border: 2px solid #f59e0b; border-bottom: 0; border-right: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;">
+                    </div>
+                </div>
+                <div class="flex-grow border-t-2 border-amber-500 relative mx-[-1px]">
+                    <span
+                        class="absolute text-base top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-amber-500">◀</span>
+                </div>
+                <div class="border-2 bg-amber-100 border-amber-500 rounded-full px-5 py-0 h-11">
+                    <p class="text-sm">Week4</p>
+                    <hr class="border-t-2 border-amber-500">
+                    <p class="text-xs">0.005$</p>
+                </div>
+                <div class="flex-grow border-t-2 border-amber-500 relative mx-[-1px]">
+                    <span
+                        class="absolute text-base top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-amber-500">◀</span>
+                </div>
+                <div class="border-2 bg-amber-100 border-amber-500 rounded-full px-5 py-0 h-11">
+                    <p class="text-sm">Week3</p>
+                    <hr class="border-t-2 border-amber-500">
+                    <p class="text-xs">0.0003$</p>
+                </div>
+                <div class="relative w-6 h-12 mr-2 flex items-start">
+                    <div class="absolute top-0"
+                        style="width: 24px; height: 24px; border-bottom-right-radius: 24px; border: 2px solid #f59e0b; border-top: 0; border-left: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Separator 2 -->
+            <div class="h-2 flex items-center justify-start">
+                <span class="w-4 mt-0.5 ml-[1px] bottom-0 text-amber-500 text-base transform rotate-90">▶</span>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="flex justify-between items-center">
+                <div class="relative w-6 h-12 ml-2 flex items-end">
+                    <div class="absolute top-0"
+                        style="width: 24px; height: 24px; border-bottom-left-radius: 24px; border: 2px solid #f59e0b; border-top: 0; border-right: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;">
+                    </div>
+                </div>
+                <div class="border-2 bg-amber-100 border-amber-500 rounded-full px-5 py-0 h-11 animate-pulse">
+                    <p class="text-sm">Week5</p>
+                    <hr class="border-t-2 border-amber-500">
+                    <p class="text-xs">0.0008$</p>
+                </div>
+                <div class="flex-grow border-t-2 border-dashed border-amber-200 relative mx-[-1px]">
+                    <span
+                        class="absolute text-base top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-amber-200">▶</span>
+                </div>
+                <div class="border-2 border-amber-200 rounded-full px-5 py-0 h-11">
+                    <p class="text-sm text-slate-600">Week6</p>
+                    <hr class="border-t-2 border-amber-200">
+                    <p class="text-xs text-slate-600">0.0013$</p>
+                </div>
+                <div class="flex-grow border-t-2 border-dashed border-amber-200 relative mx-[-1px]">
+                    <span
+                        class="absolute text-base top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-amber-200">▶</span>
+                </div>
+                <div class="relative w-6 h-12 mr-2 flex items-end">
+                    <div class="absolute bottom-[1px]"
+                        style="width: 24px; height: 24px; border-top-right-radius: 24px; border: 2px dashed #fde68a; border-bottom: 0; border-left: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Separator 3 -->
+            <div class="h-2 flex items-center justify-end">
+                <span class="w-4 mt-0.5 mr-[1px] bottom-0 text-amber-200 text-base transform rotate-90">▶</span>
+            </div>
+
+            <!-- Row 4 -->
+            <div class="flex justify-between items-center">
+                <div class="relative w-6 h-12 ml-2 flex items-end">
+                    <div class="absolute bottom-[1px]"
+                        style="width: 24px; height: 24px; border-top-left-radius: 24px; border: 2px dashed #fde68a; border-bottom: 0; border-right: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;">
+                    </div>
+                </div>
+                <div class="flex-grow border-t-2 border-dashed border-amber-200 relative mx-[-1px]">
+                    <span
+                        class="absolute text-base top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-amber-200">◀</span>
+                </div>
+                <div class="border-2 border-amber-200 rounded-full px-5 py-0 h-11">
+                    <p class="text-sm text-slate-600">Week8</p>
+                    <hr class="border-t-2 border-amber-200">
+                    <p class="text-xs text-slate-600">0.0034$</p>
+                </div>
+                <div class="flex-grow border-t-2 border-dashed border-amber-200 relative mx-[-1px]">
+                    <span
+                        class="absolute text-base top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-amber-200">◀</span>
+                </div>
+                <div class="border-2 border-amber-200 rounded-full px-5 py-0 h-11">
+                    <p class="text-sm text-slate-600">Week7</p>
+                    <hr class="border-t-2 border-amber-200">
+                    <p class="text-xs text-slate-600">0.0021$</p>
+                </div>
+                <div class="relative w-6 h-12 mr-2 flex items-start">
+                    <div class="absolute top-0"
+                        style="width: 24px; height: 24px; border-bottom-right-radius: 24px; border: 2px dashed #fde68a; border-top: 0; border-left: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Separator 4 -->
+            <div class="h-2 flex items-center justify-start">
+                <span class="w-4 mt-0.5 ml-[1px] bottom-0 text-amber-200 text-base transform rotate-90">▶</span>
+            </div>
+
+            <!-- Row 5 -->
+            <div class="flex justify-between items-center">
+                <div class="relative w-6 h-12 ml-2 flex items-end">
+                    <div class="absolute top-0"
+                        style="width: 24px; height: 24px; border-bottom-left-radius: 24px; border: 2px dashed #fde68a; border-top: 0; border-right: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;">
+                    </div>
+                </div>
+                <div class="border-2 border-amber-200 rounded-full px-5 py-0 h-11">
+                    <p class="text-sm text-slate-600">Week9</p>
+                    <hr class="border-t-2 border-amber-200">
+                    <p class="text-xs text-slate-600">0.0055$</p>
+                </div>
+                <div class="flex-grow border-t-2 border-dashed border-amber-200 relative mx-[-1px]">
+                    <span
+                        class="absolute text-base top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-amber-200">▶</span>
+                </div>
+                <div class="border-2 border-amber-200 rounded-full px-5 py-0 h-11">
+                    <p class="text-sm text-slate-600">Week10</p>
+                    <hr class="border-t-2 border-amber-200">
+                    <p class="text-xs text-slate-600">0.0089$</p>
+                </div>
+                <div class="flex-grow border-t-2 border-dashed border-amber-200 relative mx-[-1px]">
+                    <span
+                        class="absolute text-base top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-amber-200">▶</span>
+                </div>
+                <div class="relative w-6 h-12 mr-2 flex items-end">
+                    <div class="absolute bottom-[1px]"
+                        style="width: 24px; height: 24px; border-top-right-radius: 24px; border: 2px dashed #fde68a; border-bottom: 0; border-left: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Separator 5 -->
+            <div class="h-2 flex items-center justify-end">
+                <span class="w-4 mt-0.5 mr-[1px] bottom-0 text-amber-200 text-base transform rotate-90">▶</span>
+            </div>
+
+            <!-- Row 6 -->
+            <div class="flex justify-between items-center">
+                <div class="relative w-6 h-12 ml-2 flex items-end">
+                    <div class="absolute bottom-[1px]"
+                        style="width: 24px; height: 24px; border-top-left-radius: 24px; border: 2px dashed #fde68a; border-bottom: 0; border-right: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;">
+                    </div>
+                </div>
+                <div class="flex-grow border-t-2 border-dashed border-amber-200 relative mx-[-1px]">
+                    <span
+                        class="absolute text-base top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-amber-200">◀</span>
+                </div>
+                <div class="border-2 border-amber-200 rounded-full px-5 py-0 h-11">
+                    <p class="text-sm text-slate-600">Week12</p>
+                    <hr class="border-t-2 border-amber-200">
+                    <p class="text-xs text-slate-600">0.0233$</p>
+                </div>
+                <div class="flex-grow border-t-2 border-dashed border-amber-200 relative mx-[-1px]">
+                    <span
+                        class="absolute text-base top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-amber-200">◀</span>
+                </div>
+                <div class="border-2 border-amber-200 rounded-full px-5 py-0 h-11">
+                    <p class="text-sm text-slate-600">Week11</p>
+                    <hr class="border-t-2 border-amber-200">
+                    <p class="text-xs text-slate-600">0.0144$</p>
+                </div>
+                <div class="relative w-6 h-12 mr-2 flex items-start">
+                    <div class="absolute top-0"
+                        style="width: 24px; height: 24px; border-bottom-right-radius: 24px; border: 2px dashed #fde68a; border-top: 0; border-left: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Separator 6 -->
+            <div class="h-2 flex items-center justify-start">
+                <span class="w-4 mt-0.5 ml-[1px] bottom-0 text-amber-200 text-base transform rotate-90">▶</span>
+            </div>
+
+            <!-- Row 7 -->
+            <div class="flex items-center">
+                <div class="relative w-6 h-12 ml-2 flex items-end">
+                    <div class="absolute top-0"
+                        style="width: 24px; height: 24px; border-bottom-left-radius: 24px; border: 2px dashed #fde68a; border-top: 0; border-right: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;">
+                    </div>
+                </div>
+                <div class="border-2 border-amber-200 rounded-full px-5 py-0 h-11">
+                    <p class="text-sm text-slate-600">Week13</p>
+                    <hr class="border-t-2 border-amber-200">
+                    <p class="text-xs text-slate-600">0.0376$</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- More than 768px -->
+    <div class="container mx-auto p-4 max-w-[640px] hidden md:block">
         <div class="flex flex-col">
             <!-- Row 1 -->
             <div class="flex justify-between items-center pl-8">
@@ -47,7 +284,7 @@
                 </div>
             </div>
 
-            <!-- Separator -->
+            <!-- Separator 1 -->
             <div class="h-2 flex items-center justify-end">
                 <span class="w-4 mt-0.5 mr-[1px] bottom-0 text-amber-500 text-base transform rotate-90">▶</span>
             </div>
@@ -93,7 +330,7 @@
                 </div>
             </div>
 
-            <!-- Separator -->
+            <!-- Separator 2 -->
             <div class="h-2 flex items-center justify-start">
                 <span class="w-4 mt-0.5 ml-[1px] bottom-0 text-amber-200 text-base transform rotate-90">▶</span>
             </div>
@@ -139,7 +376,7 @@
                 </div>
             </div>
 
-            <!-- Separator -->
+            <!-- Separator 3 -->
             <div class="h-2 flex items-center justify-end">
                 <span class="w-4 mt-0.5 mr-[1px] bottom-0 text-amber-200 text-base transform rotate-90">▶</span>
             </div>
@@ -185,7 +422,7 @@
                 </div>
             </div>
 
-            <!-- Separator -->
+            <!-- Separator 4 -->
             <div class="h-2 flex items-center justify-start">
                 <span class="w-4 mt-0.5 ml-[1px] bottom-0 text-amber-200 text-base transform rotate-90">▶</span>
             </div>
